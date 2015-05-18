@@ -24,9 +24,35 @@ a:hover {
 a:active {
   color: 'red';
 }
+
+button {
+  border: 1px solid #000;
+  background: #ccc;
+}
+
+button:hover {
+  border: 1px solid #ccc;
+  background: #fff;
+}
+
+button[disabled] {
+  border: 1px solid #ccc;
+  background: #ddd;
+}
+
+button[disabled]:hover {
+  border: 1px solid #ddd;
+  background: #fff;
+  cursor: not-allowed;
+}
 </style>
   
   <body>
+    
+  <button>Press me …</button>
+  
+  <button disabled>Press me …</button>
+
     
   <button ontouchstart="alert('wow')" style="font-size: 20px">Follow</button>
     
