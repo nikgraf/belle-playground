@@ -30,6 +30,18 @@ button {
   background: #ccc;
 }
 
+button:active {
+  box-shadow: 0 0 0 3px red;
+}
+
+button:focus {
+  box-shadow: 0 0 0 3px blue;
+}
+
+button:active:focus {
+  box-shadow: 0 0 0 3px black;
+}
+
 button:hover {
   border: 1px solid #ccc;
   background: #fff;
